@@ -1,0 +1,201 @@
+.user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#user-left-details {
+  width: 67%;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+#user-left-details > div {
+  width: 95%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.interests-main-div {
+  width: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.interests-main-div > img {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 50%;
+
+  background: #323232;
+}
+
+.interests-main-div > h3 {
+  color: #000;
+  font-weight: bold;
+}
+
+.interests-main-div > p {
+  color: #323232;
+}
+
+.interests-main-div > button {
+  background: transparent;
+  outline: none;
+  border: 1px solid #323232;
+  padding: 5px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.interests-main-div > button:hover {
+  background-color: #323232;
+  color: #fff;
+}
+
+#user-left-details > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#user-fams {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10%);
+  max-height: 515px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 350px;
+  width: 60%;
+}
+
+#user-fams > img {
+  width: 95%;
+  height: 200px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#today-task {
+  height: 200px;
+  width: 40%;
+  text-align: left;
+}
+
+#avtar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #2a9d8f;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#user-data {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10%);
+  width: 30%;
+  min-height: 515px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#user-data > div {
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#user-detail-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#user-detail-button > button {
+  font-weight: bolder;
+
+  letter-spacing: 2px;
+  padding: 10px 20px;
+
+  border-radius: 40px;
+  border: 2px solid #2a9d8f;
+
+  background-color: transparent;
+  color: #fff;
+
+  transition: background-color, color 0.5s linear;
+}
+
+#user-detail-button > button:hover {
+  background-color: #2a9d8f;
+  color: #323232;
+}
+
+#user-data > div > h1 {
+  color: #2a9d8f;
+  font-weight: bolder;
+}
+
+.today-event {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(to Left, #323232, #b5c6e0);
+}
+
+.today-event > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.today-event > div > div:nth-child(1) {
+  color: black;
+  background: #fff;
+  padding: 5px 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+@media (max-width: 450px) {
+  .user-profile {
+    flex-direction: column-reverse;
+  }
+  #user-data {
+    width: 100%;
+  }
+  #avtar {
+    width: 40%;
+    height: fit-content;
+    align-self: center;
+    margin-bottom: 50px;
+  }
+}
